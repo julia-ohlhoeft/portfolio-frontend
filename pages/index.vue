@@ -3,12 +3,11 @@
         <div class="introduction">
             <h2>{{ greetings[currentGreeting] }}! 👋</h2>
 
-            <p>Ich bin Julia Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed nobis dolore. Sapiente
-                perspiciatis dignissimos culpa laudantium. Sequi voluptas dignissimos tempore illum asperiores doloribus
-                iusto, tempora tenetur molestias ullam quidem.</p>
+            <p>Ich bin Julia quidem.</p>
 
             <br>
             <p> You can find me on <nuxt-link to="https://www.pinterest.de/ju_35mm_film/">Pinterest</nuxt-link></p>
+
         </div>
         <nuxt-link class="imprint-link" to="/imprint">Imprint</nuxt-link>
     </div>
