@@ -3,7 +3,9 @@
         <div class="introduction">
             <h2>{{ greetings[currentGreeting] }}! 👋</h2>
 
-            <p>Ich bin Julia quidem.</p>
+            <p>I am Julia and I am pursuing filmphotography as a hobby. <a href="mailto:julia.s.ohlhoeft@gmail.com">Reach
+                    out to me</a> if you want to buy licenses or
+                scans:)</p>
 
             <br>
             <p> You can find me on <nuxt-link to="https://www.pinterest.de/ju_35mm_film/">Pinterest</nuxt-link></p>
