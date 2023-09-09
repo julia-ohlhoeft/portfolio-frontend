@@ -14,12 +14,13 @@
         <nuxt-link class="imprint-link" to="/imprint">Imprint</nuxt-link>
     </div>
 </template>
-
+<meta />
 <script setup>
 useHead({
     title: 'Julia Ohlhöft',
     meta: [
-        { name: 'description', content: 'Portfolio of Julia Ohlhöft' }
+        { name: 'description', content: 'Portfolio of Julia Ohlhöft' },
+        { name: "p:domain_verify", content: '6f77dfc57e14ceafc137f5095e4a1233' }
     ],
 
 })

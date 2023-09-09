@@ -27,7 +27,14 @@
 </template>
 
 <script setup>
+useHead({
+    title: 'Imprint',
+    meta: [
+        { name: 'description', content: 'Portfolio of Julia Ohlhöft' },
+        { name: "p:domain_verify", content: '6f77dfc57e14ceafc137f5095e4a1233' }
+    ],
 
+})
 </script>
 
 <style lang="scss" scoped></style>
