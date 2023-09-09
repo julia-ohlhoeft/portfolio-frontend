@@ -20,6 +20,7 @@
 
 body {
     margin: 0;
+    background-color: #FAF1E4;
 }
 
 .page-content {
