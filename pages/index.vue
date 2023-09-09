@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="introduction">
-            <h2>Hola! 👋</h2>
+            <h2>{{ greetings[currentGreeting] }}! 👋</h2>
 
             <p>Ich bin Julia Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sed nobis dolore. Sapiente
                 perspiciatis dignissimos culpa laudantium. Sequi voluptas dignissimos tempore illum asperiores doloribus
@@ -22,6 +22,36 @@ useHead({
     ],
 
 })
+
+const shuffle = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+let greetings = [
+    "Hola", "Hallo", "Hello", "Ciao", "Привет", "こんにちは",
+]
+
+greetings = shuffle(greetings)
+
+
+let currentGreeting = ref(0);
+
+function switchGreeting() {
+    if (currentGreeting.value < greetings.length - 1)
+        currentGreeting.value += 1;
+    else currentGreeting.value = 0;
+}
+
+onMounted(() => {
+    window.setInterval(() => {
+        switchGreeting()
+    }, 3000)
+})
+
 </script>
 
 <style lang="scss" scoped>
@@ -29,6 +59,9 @@ useHead({
     font-size: 16px;
 }
 
+h2 {
+    height: 50px;
+}
 
 
 @media only screen and (min-width: 1000px) {
